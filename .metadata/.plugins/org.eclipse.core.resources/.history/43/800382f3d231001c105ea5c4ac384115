@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package tema1;
+
+/**
+ * @author usuario
+ *
+ */
+public class eje1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		System.out.println("hola mundo");
+
+	}
+
+}

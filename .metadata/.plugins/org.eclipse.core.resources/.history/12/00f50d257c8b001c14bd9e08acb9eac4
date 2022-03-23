@@ -1,0 +1,51 @@
+package tema8Poo;
+
+import java.util.ArrayList;
+
+public class Agenda {
+	
+	private ArrayList<Contacto> arrayContactos;
+
+	public Agenda() {
+		super();
+		this.arrayContactos = new ArrayList<>();
+	}
+	
+	
+	
+	//Metodos
+	
+	public boolean existeContacto(Contacto c) {
+		for (Contacto cnt : arrayContactos) {
+			if(cnt.equals(c)) {
+				return true;
+			}else {
+				return false;
+			}
+			
+		}
+		return false;
+	}
+	
+	public void addContacto(Contacto c) {
+	
+			if(existeContacto(c)!=true) {
+				arrayContactos.add(c);
+			}		
+	}
+	
+	public void listarContactos() {
+		for (Contacto cnt : arrayContactos) {
+			System.out.println(cnt);
+		}
+	}
+	
+	public void buscarContactos(String nombre) {
+		for (Contacto cnt : arrayContactos) {
+			if(cnt.equals(nombre)) {
+				
+			}
+		}
+	}
+
+}

@@ -1,0 +1,63 @@
+package tema3;
+
+import java.util.Scanner;
+
+public class ejer9 {
+
+	public static void pintarVector(int[] num) {
+		for(int i=0; i<num.length ;i++) {
+			System.out.print(num[i] + "  " );
+		}
+	}
+	
+	public static int[] moverPosicion(int [] num) {
+	int pos=num[4];
+		
+		//Recorremos la poscicion
+		for(int i=4; i>=0-1 ;i--) {
+			
+			if(i==4) {
+			pos=num[num.length-1];
+			}
+			num[i+1]=num[i];
+		}
+		
+		//Ponemos la ultima posicion a 0
+		num[0]=pos;
+		return num;
+		
+	
+		}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int numero=0, posicion=0;
+		int num[] = new int[5];
+		
+		//Llenamos los array con numero pedidos por teclado
+		
+		for(int i=0 ;i<num.length ;i++) {
+			System.out.println("Numero " + i);
+			numero =  Integer.parseInt(sc.nextLine());
+			num[i]=numero;
+			
+		}
+		
+		System.out.println("Posicion");
+		posicion=sc.nextInt();		
+		
+		//Guardamos la posisicion del ultimo numero
+		for(int i=0 ;i<=posicion; i++) {
+		moverPosicion(num);	
+		}
+	
+		
+		System.out.println();
+		pintarVector(num);
+		sc.close();
+	}
+
+}

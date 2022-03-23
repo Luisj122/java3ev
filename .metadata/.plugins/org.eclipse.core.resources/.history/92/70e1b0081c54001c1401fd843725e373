@@ -1,0 +1,25 @@
+package tema5String;
+
+import java.util.Scanner;
+
+public class ejer1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+			String cadena="";
+			
+			System.out.println("Introduce una cadena");
+			cadena = sc.nextLine();
+			
+			System.out.println(cadena);
+			
+			for(char i=(char) cadena.length() ; i>0 ;i--) {
+				System.out.println(cadena);
+			}
+			
+			
+	}
+
+}

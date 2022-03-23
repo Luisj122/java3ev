@@ -1,0 +1,34 @@
+package tema5String;
+
+import java.util.Scanner;
+
+public class ejer3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+			
+		Scanner sc = new Scanner(System.in);
+		String cadena="";
+		String cadBusca="";
+		int contador=0;
+		
+		System.out.println("Escribe una cadena");
+		cadena = sc.nextLine();
+		
+		System.out.println("Palabra a buscar");
+		cadBusca = sc.nextLine();
+		
+	
+
+		
+		while (cadena.indexOf(cadBusca)>=-1) {
+			cadena=cadena.substring(cadena.indexOf(cadBusca+cadBusca.length(),cadena.length())) ;
+			contador++;
+		}
+		System.out.println(contador);
+		
+		sc.close();
+	}
+
+}

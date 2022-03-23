@@ -1,0 +1,11 @@
+package Tienda;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Categoria moviles = new Categoria("moviles");
+		Producto p1  = new Producto("IP13", "Tel apple", moviles, 50, 20);
+	}
+
+}

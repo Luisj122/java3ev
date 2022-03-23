@@ -1,0 +1,15 @@
+package ejercicioClase;
+
+import java.time.LocalDate;
+
+public class testExpediente {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		expediente alumno = new expediente("Carlos", "Guerrero", LocalDate.of(2000, 2, 20), 1);
+		
+
+	}
+
+}

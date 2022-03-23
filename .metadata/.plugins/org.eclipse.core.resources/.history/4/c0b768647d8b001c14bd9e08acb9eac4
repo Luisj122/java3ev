@@ -1,0 +1,10 @@
+package tema8Poo;
+
+public class testAgenda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

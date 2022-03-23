@@ -1,0 +1,25 @@
+package tema8Poo;
+
+import java.util.Scanner;
+
+public class testAgenda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("AGENDA TELEFONICA");
+		System.out.println("-----------------");
+		System.out.println("1. Añadir nuevo contacto");
+		System.out.println("2. Listar contactos");
+		System.out.println("3. Buscar contacto");
+		System.out.println("4. Eliminar contacto");
+		System.out.println("5. Estado de la agenda");
+		System.out.println("6. Salir");
+		System.out.println();
+		System.out.println("Elige una opcion: ");
+
+	}
+
+}

@@ -1,0 +1,39 @@
+package tema5String;
+
+import java.util.Scanner;
+
+public class ejer5 {
+	
+public static int contarVocales(String cadena) {
+		
+		int contador=0;
+		for(int i=0; i<cadena.length(); i++) {
+			char car = cadena.toLowerCase().charAt(i);
+			
+			if (car == 'a' || car == 'e' || car == 'i' || car == 'o' || car == 'u') {
+				contador++;
+			}
+			
+		
+		}
+		
+		return contador;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		String cadena="";
+		
+		System.out.println("Escribe una cadena");
+		cadena = sc.nextLine();
+		
+		System.out.println(contarVocales(cadena));
+				
+		
+	
+
+}
+}

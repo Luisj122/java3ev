@@ -1,0 +1,64 @@
+package tema8Poo;
+
+import java.util.Objects;
+
+public class Contacto {
+	
+	//Atributos
+	
+	private String nombre;
+	private int telefono;
+	
+	
+		public Contacto(String nombre) {
+		super();
+		this.nombre = nombre;
+		this.telefono = 0;
+	}
+	
+	
+	
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+	/**
+	 * @param nombre the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	/**
+	 * @return the telefono
+	 */
+	public int getTelefono() {
+		return telefono;
+	}
+	/**
+	 * @param telefono the telefono to set
+	 */
+	public void setTelefono(int telefono) {
+		this.telefono = telefono;
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(nombre);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Contacto other = (Contacto) obj;
+		return Objects.equals(nombre, other.nombre);
+	}
+	
+	
+	
+
+}

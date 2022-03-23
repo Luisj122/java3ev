@@ -1,0 +1,58 @@
+package ejercicioPoo;
+
+public class ejer7 {
+	
+	//Propiedades
+	
+	private double meridiano;
+	private double paralelo;
+	private double distancia_tierra;
+	
+	//Constructores
+	
+	ejer7 (double m, double p, double d) {
+		meridiano = m;
+		paralelo = p;
+		distancia_tierra = d;
+	}
+	
+	ejer7 () {
+		meridiano=paralelo=distancia_tierra=0;
+	}
+	public void setPosicion(double m, double p, double d) {
+		meridiano = m;
+		paralelo = p;
+		distancia_tierra = d;
+	}
+	
+	
+	//Metodos
+	
+	public void variaAltura(double desplazamiento) {
+		this.distancia_tierra+=desplazamiento;
+	}
+	
+	public boolean enOrbita() {
+		if(this.distancia_tierra==0) {
+			return false;
+		}else {
+			return true;
+		}
+	}
+	public void variaPosicion(double variap, double variam) {
+		this.meridiano=variam;
+		this.paralelo=variap;
+	}
+	
+	
+	
+	//Pintar
+	
+	public void printPosicion() {
+		System.out.print("El satélite se encuentra en ");
+		System.out.print("el paralelo "+paralelo+" meridiano "+meridiano);
+		System.out.print(" a una distancia de la Tierra de"+distancia_tierra+" kms.");
+	}
+
+
+}

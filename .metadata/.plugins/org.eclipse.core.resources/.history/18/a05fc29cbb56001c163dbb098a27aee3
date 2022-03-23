@@ -1,0 +1,21 @@
+package tema3;
+
+import java.util.Iterator;
+
+public class ejer17 {
+	
+	public static void ordenarColumna() {
+		for (int j = 0; j < matriz[0].length; j++) {
+			int vectorC[] = new int[matriz.length];
+			for (int i = 0; i < matriz.length; i++) {
+				matriz[i]=matriz[i][j];
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

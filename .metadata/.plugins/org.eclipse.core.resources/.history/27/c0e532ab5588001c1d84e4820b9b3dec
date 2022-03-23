@@ -1,0 +1,19 @@
+package ejercicioClase;
+
+import java.time.LocalDate;
+
+public class expediente {
+
+	//Tipo enum definidos para mi clase
+	enum Modalidad {FPB, GRADOMEDIO, GRADOSUPERIOR}
+	
+	//Propiedades
+	private static int totalAlumnado = 0;
+	private final int id = expediente.totalAlumnado+1;
+	private String nombre;
+	private String apellido;
+	private char sexo;
+	private LocalDate fechaNacimiento;
+	private Modalidad modalidad;
+	
+}

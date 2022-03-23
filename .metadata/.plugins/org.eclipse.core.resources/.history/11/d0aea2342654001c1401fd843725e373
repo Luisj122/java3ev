@@ -1,0 +1,49 @@
+package tema5String;
+
+import java.util.Scanner;
+
+public class ejer2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String cadena="";
+		String cadIn="";
+		String concat="";
+		
+		System.out.println("Introduce una cadena");
+		cadena = sc.nextLine();
+		
+		
+		//Invertidmos la cadena
+		
+		
+		
+		for(int i=cadena.length()-2 ;i>=0 ;i--) {
+			cadIn+=cadena.charAt(i);
+					
+		}
+		
+		//Concatenamos la cadena invertida con la cadena original
+		concat = cadena.concat(cadIn);
+		
+		//Pintamos la cadena concatenada
+		
+		System.out.println(concat);
+		
+		StringBuffer cadBuffer = new StringBuffer(cadena);
+
+		
+		for(int i=cadBuffer.length()-2 ;i>=0 ;i--) {
+			System.out.println(cadBuffer.charAt(i));
+					
+		}
+		
+		
+		sc.close();
+
+	}
+
+}
