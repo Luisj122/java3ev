@@ -11,7 +11,7 @@ public class ejer1 {
 		String dia="";
 		
 		
-		System.out.println("Dia de la sa ");
+		System.out.println("Dia de la ");
 		dia=sc.nextLine();
 		
 		switch (dia) {
